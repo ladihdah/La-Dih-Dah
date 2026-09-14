@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La-Dih-Dah Yoga | Coming Soon</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img src="logo-gold-circle.png" alt="La-Dih-Dah">
+      <span class="brand-name">La-Dih-Dah</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="scents.html">Scents</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="yoga.html" class="active">Yoga</a></li>
+        <li><a href="care-contact.html">Care &amp; Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="--img:url('yoga-mat-feet.png'); min-height:64vh;">
+  <div class="hero-inner">
+    <div class="eyebrow">COMING SOON · ROCKLAND, ONTARIO</div>
+    <h1 class="display">La-Dih-Dah Yoga</h1>
+    <p class="lede">Hatha yoga · mindful movement · calm strength. The next chapter of La-Dih-Dah, built on the same idea: relax, recharge, reconnect.</p>
+  </div>
+</section>
+
+<section class="center">
+  <div class="wrap">
+    <div class="eyebrow">A NEW SPACE TO SLOW DOWN</div>
+    <h2 class="title">Something's coming.</h2>
+    <p class="intro" style="max-width:520px;margin:0 auto 34px;">We're building a studio for hatha yoga, mindful movement and calm strength — the same intention behind every La-Dih-Dah candle, now in a room you can breathe in.</p>
+    <a href="care-contact.html" class="btn btn-dark">Ask Lenka how to join the first-class list</a>
+  </div>
+</section>
+
+<section class="bg-deep">
+  <div class="wrap">
+    <img src="yoga-mat.png" alt="La-Dih-Dah Yoga mat" style="max-width:520px;margin:0 auto;">
+  </div>
+</section>
+
+<section class="bg-dark tight" style="padding:60px 0;">
+  <div class="wrap center">
+    <div class="eyebrow">JOIN THE RITUAL</div>
+    <h2 class="title" style="font-size:1.9rem;">Be first to know</h2>
+    <p class="intro" style="max-width:440px;margin:0 auto 26px;opacity:0.85;">New scents, market dates, and early access to limited batches — straight to your inbox.</p>
+    <form style="display:flex;gap:10px;max-width:400px;margin:0 auto;flex-wrap:wrap;justify-content:center;" onsubmit="return false;">
+      <input type="email" placeholder="Your email" required style="flex:1;min-width:200px;padding:14px 16px;background:transparent;border:1px solid rgba(246,241,231,0.4);color:var(--cream);font-family:var(--sans);">
+      <button type="submit" class="btn btn-light">Subscribe</button>
+    </form>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img src="logo-gold-circle.png" alt="La-Dih-Dah" style="height:52px;margin-bottom:16px;">
+        <p style="opacity:0.75;max-width:320px;font-size:0.9rem;">Handcrafted candles, hand-poured in Ontario. Made with intention, from my table to yours.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">Flagship Candles</a></li>
+          <li><a href="shop.html#market">Market Finds</a></li>
+          <li><a href="shop.html#ritual">Ritual Boxes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>La-Dih-Dah</h4>
+        <ul>
+          <li><a href="story.html">Our Story</a></li>
+          <li><a href="scents.html">Scents</a></li>
+          <li><a href="care-contact.html">Candle Care</a></li>
+          <li><a href="care-contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 La-Dih-Dah Handcrafted Goods</span>
+      <span>Hand-poured in Ontario, Canada</span>
+    </div>
+  </div>
+</footer>
+
+<audio id="bgMusic" src="yoga-music.mp3" loop></audio>
+<button class="music-toggle" id="musicToggle" aria-label="Toggle background music">♪</button>
+<script>
+  const audio = document.getElementById("bgMusic");
+  const btn = document.getElementById("musicToggle");
+  btn.addEventListener("click", () => {
+    if (audio.paused) { audio.play(); btn.classList.add("playing"); }
+    else { audio.pause(); btn.classList.remove("playing"); }
+  });
+</script>
+</body>
+</html>

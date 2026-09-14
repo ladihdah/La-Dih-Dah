@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Candle Care &amp; Contact | La-Dih-Dah</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img src="logo-gold-circle.png" alt="La-Dih-Dah">
+      <span class="brand-name">La-Dih-Dah</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="scents.html">Scents</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="yoga.html">Yoga</a></li>
+        <li><a href="care-contact.html" class="active">Care &amp; Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-banner">
+  <div class="eyebrow">COCONUT-SOY WAX · NATURAL WOOD WICK</div>
+  <h1 class="title" style="font-family:var(--serif);font-size:clamp(2.2rem,5vw,3.2rem);">Candle Care</h1>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Before you light</h3>
+          <ul style="opacity:0.85;padding-left:18px;">
+            <li>Trim the wood wick to about 1/8 in (3 mm) before each use.</li>
+            <li>On the first burn, allow the melt pool to reach toward the vessel edges.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">While it burns</h3>
+          <ul style="opacity:0.85;padding-left:18px;">
+            <li>Burn no longer than 4 hours at a time.</li>
+            <li>Keep away from children, pets, drafts and anything flammable.</li>
+            <li>Never leave a burning candle unattended.</li>
+            <li>Stop use when about 1/2 in (13 mm) of wax remains.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="card-desc" style="margin-top:24px;">380 g candle: approx. 60–70 hours. Burn time varies with use and conditions.</p>
+  </div>
+</section>
+
+<section class="bg-deep">
+  <div class="wrap">
+    <div class="section-head center">
+      <div class="eyebrow">GET IN TOUCH</div>
+      <h2 class="title">Say hello</h2>
+      <p class="intro">Custom orders, market appearances, or just want to say hi — I'd love to hear from you.</p>
+    </div>
+    <div style="max-width:480px;margin:0 auto;text-align:center;">
+      <p style="font-family:var(--serif);font-size:1.3rem;">info@la-dih-dah.com</p>
+      <p class="card-desc">Hand-poured in Ontario, Canada</p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-dark tight" style="padding:60px 0;">
+  <div class="wrap center">
+    <div class="eyebrow">JOIN THE RITUAL</div>
+    <h2 class="title" style="font-size:1.9rem;">Be first to know</h2>
+    <p class="intro" style="max-width:440px;margin:0 auto 26px;opacity:0.85;">New scents, market dates, and early access to limited batches — straight to your inbox.</p>
+    <form style="display:flex;gap:10px;max-width:400px;margin:0 auto;flex-wrap:wrap;justify-content:center;" onsubmit="return false;">
+      <input type="email" placeholder="Your email" required style="flex:1;min-width:200px;padding:14px 16px;background:transparent;border:1px solid rgba(246,241,231,0.4);color:var(--cream);font-family:var(--sans);">
+      <button type="submit" class="btn btn-light">Subscribe</button>
+    </form>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img src="logo-gold-circle.png" alt="La-Dih-Dah" style="height:52px;margin-bottom:16px;">
+        <p style="opacity:0.75;max-width:320px;font-size:0.9rem;">Handcrafted candles, hand-poured in Ontario. Made with intention, from my table to yours.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">Flagship Candles</a></li>
+          <li><a href="shop.html#market">Market Finds</a></li>
+          <li><a href="shop.html#ritual">Ritual Boxes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>La-Dih-Dah</h4>
+        <ul>
+          <li><a href="story.html">Our Story</a></li>
+          <li><a href="scents.html">Scents</a></li>
+          <li><a href="care-contact.html">Candle Care</a></li>
+          <li><a href="care-contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 La-Dih-Dah Handcrafted Goods</span>
+      <span>Hand-poured in Ontario, Canada</span>
+    </div>
+  </div>
+</footer>
+
+<audio id="bgMusic" src="theme-music.mp3" loop></audio>
+<button class="music-toggle" id="musicToggle" aria-label="Toggle background music">♪</button>
+<script>
+  const audio = document.getElementById("bgMusic");
+  const btn = document.getElementById("musicToggle");
+  btn.addEventListener("click", () => {
+    if (audio.paused) { audio.play(); btn.classList.add("playing"); }
+    else { audio.pause(); btn.classList.remove("playing"); }
+  });
+</script>
+</body>
+</html>
